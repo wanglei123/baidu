@@ -1,0 +1,638 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: arial;
+    behavior: url(csshover.htc);
+
+}
+.wrap{
+    display: block;
+    min-height: 600px;
+    min-width: 810px;
+    height: 100%;
+
+}
+    .tel_container{
+        display: none;
+    }
+
+p,b {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+}
+
+header nav {
+    float: right;
+    margin: 19px 10px 5px 0px;
+    /*width: 480px;*/
+    height: 50px;
+}
+
+header nav a {
+    margin: 10px;
+    font-weight: 700;
+    color: #333;
+    line-height: 24px;
+}
+
+header nav a:hover {
+    color: #00c;
+}
+
+a#more {
+    background-color: #38f;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 1px solid #38f;
+    display: inline-block;
+    width: 60px;
+    height: 23px;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.dl {
+    font-weight: normal;
+}
+
+.container {
+    padding-top: 50px;
+    /*position: relative;*/
+    min-height: 600px;
+    min-width: 810px;
+    text-align: center;
+}
+
+.container img {
+    width: 270px;
+    height: 129px;
+    margin-bottom: 25px;
+    border: none;
+}
+
+.container .wd {
+    width: 539px;
+    height: 34px;
+    *height: 27px; /*用于ie6/7中，搜索框比按钮高1px,但在其它的浏览器下是正常的*/
+    border: 1px solid #b6b6b6;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align:top;
+    margin-right: 0;
+    border-right-width: 0;
+    padding: 0 0px 0px 6px;
+    outline: none;
+    *background: transparent;
+
+}
+
+
+
+.container .wd:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.container .wd:focus {
+    border-color: #4791ff transparent #4791ff #4791ff;/*这个还是不生效*/
+}
+
+.container .btn {
+    border:none;
+    width: 100px;
+    height: 36px;
+    background: #3385ff;
+    letter-spacing: 1px;
+    background-image: none;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    outline: medium;
+    vertical-align: top;
+    border-bottom: 1px solid #2d78f4;
+    *border-bottom:none;
+    cursor: pointer;
+    *behavior:url(ie-css3.htc);
+}
+
+
+.container .btn:hover {
+    background-color: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    *border-bottom:none;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 44px;
+}
+
+#content {
+    width: 640px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#foot-left {
+    width: 277px;
+    height: 60px;
+    float: left;
+}
+
+#shoujibaidu {
+    width: 122px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+    display: inline;
+}
+
+#img1 {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/shoujibaidu.png);
+}
+
+.text {
+    float: left;
+    display: inline;
+    width: 56px;
+    height: 44px;
+    margin: 8px 0 0 5px;
+}
+
+.text p {
+    line-height: 23px;
+}
+
+#baidunuomi {
+    width: 122px;
+    height: 60px;
+    float: left;
+}
+
+#img2 {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/baidunuomi.png);
+}
+
+#foot-right {
+    width: 360px;
+    height: 56px;
+    float: left;
+}
+
+#foot-right p {
+    line-height: 28px;
+}
+
+#first a {
+    color: #272727;
+    margin-right: 20px;
+}
+
+#second,
+#second a {
+    color: #666;
+}
+
+#second i {
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background: url(../img/icons_8b5b2ea9.png) no-repeat -600px -96px;
+    position: relative;
+    top: 3px;
+}
+.shouji{
+    display: none;
+}
+.wrap .sidebar{
+
+    width: 85px;
+    opacity: 1;
+    border-left: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+}
+.sidebar a{
+    display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    color: #666;
+    overflow: hidden;
+    text-decoration: none;
+}
+.sidebar a:hover{
+    text-decoration: underline;
+}
+.wrap .sidebar .side_more{
+    width: 66px;
+    height: 43px;
+    color: #333;
+    text-align: center;
+    line-height: 43px;
+    padding-top: 9px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    font-size: 13px;
+    cursor:default;
+}
+.wrap .sidebar .side_list span.side_icon_1{
+    width: 40px;
+    background-position: -72px 0;
+}
+.wrap .sidebar .side_list span.side_icon_2{
+
+    background-position: -112px 0;
+}
+.wrap .sidebar .side_list span.side_icon_3{
+
+    background-position: -36px 0;
+}
+.wrap .sidebar .side_list span.side_icon_4{
+
+    background-position: -148px 0;
+}
+.wrap .sidebar .side_list span.side_icon_5{
+
+    background-position: -184px 0;
+}
+.wrap .sidebar .side_list span.side_icon_6{
+
+    background-position: -220px 0;
+}
+.wrap .sidebar .side_list span{
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../img/bdbri_icons_2e35e84b.png) no-repeat;
+    cursor: pointer;
+}
+.wrap .sidebar .all_product{
+    width: 85px;
+    height: 30px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+/**********************手机版*************************/
+@media screen and (max-width:700px){
+    .wrap{
+        display: none;
+
+    }
+    .tel_container{
+        display: block;
+    }
+    body,p,div,input,ul{
+    margin:0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.weather{
+    width: 45%;
+    margin: 3px 0 0 5px;
+    height: 40px;
+    font-size: 28px;
+    line-height: 35px;
+    float: left;
+}
+.icon-cloud{
+    height: 40px;
+    float: left;
+    position: relative;
+    top: 3px;
+}
+.weather-num{
+    float: left;
+    font-size: 20px;
+    margin-left: 5px;
+    line-height: 35px;
+}
+.weather-status{
+    padding-top: 5px;
+    float: left;
+    height: 40px;
+    box-sizing:border-box;
+    margin-left:5px;
+    
+}
+.weather-status p{
+    height: 13px;
+    line-height: 13px;
+    font-size: 11px;
+}
+.icon-arrow-down2{
+    font-size: 10px;
+    display: inline-block;
+    float: left;
+    padding-top: 19px;
+    margin-left: 3px;
+}
+#login{
+    color: #000;
+
+}
+.icon-user{
+    display: inline-block;
+    float: right;
+    margin: 10px 15px 0 5px;
+    font-size: 28px;
+    line-height: 20px;
+}
+.logo{
+    
+    
+    height: 55px;
+    padding:17px 0 15px;
+    text-align:center;
+    
+}
+.clear{
+    clear: both;
+}
+.header{
+    width: 90%;
+    margin: 0 5%;
+    height: 40px;
+}
+.tel_form{
+    
+    width: 90%;
+    margin: 0 5%;  
+}
+.tel_text{
+    width: 80%;
+    height: 42px;
+    border:1px solid #b6b6b6;
+    outline: none;
+    border-right: none;
+    line-height:28px;
+    padding: 7px 42px 7px 6px;
+    box-sizing:border-box;
+    background: url(../shoujiimage/callicon1.png) no-repeat right;
+    background-size: 7% 54%;
+
+}
+.tel_btn{
+    height: 42px;
+    width:20%;
+    background: #38f;
+    color: #fff;
+    border:none;
+    font-size: small;
+    border-top:1px solid #38f;
+    border-bottom:1px solid #38f;
+    margin-left: -8px;
+    box-sizing:border-box;
+
+}
+.nav{
+    width: 90%;
+    margin: 7%;
+    overflow: hidden;
+    box-sizing:border-box;
+}
+.nav li{
+    float: left;
+    list-style: none;
+    margin-left: 2%;
+    width: 14%;
+}
+.nav li a{
+    font-size: 12px;
+    height: 16%;
+}
+.nav li a i{
+    display: block;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.nav li a{
+    color: #262626;
+    text-decoration: none;
+}
+
+.website{
+    width: 90%;
+    margin:  0 5% 0 5%;
+    height: 10%;
+    overflow: hidden;
+    list-style: none;
+    color: #262626;
+    background: #fff;
+    box-sizing:border-box;
+}
+
+.title_text{
+    color: #999;
+    font-size: 15px;
+    line-height: 40px;
+}
+.icon-list2{
+    float: right;
+    line-height: 40px;
+    height: 40px;
+/*    position: relative;
+    top: 12px;*/
+    color: #b6b7ba;
+
+}
+.website li{
+    float: left;
+    width: 25%;
+    line-height: 42px;
+    text-align:center;
+    
+}
+
+.icon-plus{
+    font-size: 24px;
+    color: #B6B7BA;
+    position: relative;
+    top: 3px;
+}
+.hot{
+    width: 90%;
+    margin:  5% 5% 0 5%;
+    height: 10%;
+    overflow: hidden;
+    list-style: none;
+    color: #262626;
+    background: #fff;
+    box-sizing:border-box;
+}
+.hot div{
+    margin-bottom: 10px;
+    position: relative;
+}
+.hot div a{
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    /*margin-left:50%;*/
+    height: 38px;
+    line-height: 38px;
+    position: absolute;
+    right: 35px;
+}
+.hot li{
+    width: 50%;
+    float: left;
+    height: 42px;
+    /*line-height: 42px;*/
+}
+.hot li a{
+    font-size: 14px;
+    margin: 3% 0;
+    color: #262626;
+    display: inline-block;
+    text-decoration: none;
+}
+.icon-spinner11{
+    color: #b6b7ba;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+}
+.local{
+    width: 90%;
+    padding-left: 7%;
+    height: 10%;
+    margin:5% 5% 0 5%; 
+    box-sizing:border-box;
+    overflow: hidden;
+}
+.last_title{
+    width: 90%;
+    margin: 5%;
+    color: #f8595a;
+
+}
+.last_title .title_text{
+    color: #f8595a;
+}
+
+.local li{
+    list-style: none;
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+    box-sizing:border-box;
+
+} 
+.local li a{
+
+    /*padding: 3px 16px;*/
+    display: inline-block;
+    float: left;
+    box-sizing:border-box;
+
+}
+.local li a span{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    line-height: 42px;
+    margin: 0 auto;
+}
+
+.local li a p{
+    color: #262626;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    margin: 3px 0 8px;
+
+}
+.icon-road{
+    background: #79d3a7;
+}
+.icon-airplane{
+    background: #93a4b3;
+}
+.icon-truck{
+    background: #b1cf6a;
+}
+.icon-shield{
+    background: #93a4b3;
+}
+.icon-make-group{
+    background: #75c5e6;
+}
+.icon-play{
+    background: #b493db;
+}
+.icon-cart{
+    background: #ff6fbf;
+}
+.icon-pacman{
+    background: #ff6b70;
+}
+.more{
+    width: 90%;
+    margin:5%;
+    border-top:1px solid #f0f0f0;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+}
+.more .icon-circle-down{
+    padding: 0 10px;
+    color: #b6b7ba;
+    font-size: 18px;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+}
+
+.footer a{
+    color:#262626;
+    display: block;
+    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+    padding: 16px  6px;
+}
+}
+
+
+

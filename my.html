@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mypage</title>
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="skin-wrap"></div>
+        <div class="header">
+        <!-- <div class="top-wrap"></div> -->
+            <div class="nav-left">
+                <a class="weather" href="">天津</a>
+                <a class="weather" href="">-1℃</a>
+                <a class="weather  name" href="">轻度</a>
+                <a class="weather" href="">125</a>
+                <a class="weather" href="">|</a>
+                <a href="">宝箱</a>
+                <a href="">换肤</a>
+                <a href="">消息</a>
+            </div>
+            <div class="nav-right">
+                <a href="http://news.baidu.com/">新闻</a>
+                <a href="http://www.hao123.com/">hao123</a>
+                <a href="http://map.baidu.com/">地图</a>
+                <a href="http://v.baidu.com/">视频</a>
+                <a href="http://tieba.baidu.com/">贴吧</a>
+                <a class="dl username" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">我的ID</a>
+                <a class="dl" href="javascript:;">设置</a>
+                <a id="more" href="javascript:;">更多产品</a>
+            </div>
+            <div class="user-list">
+                <a href="">我的VIP</a>
+                <a href="">个人中心</a>
+                <a href="">帐号设置</a>
+                <a href="">意见反馈</a>
+                <a href="">退出</a>
+            </div>
+            <div class="icon"></div>
+            <div class="set-list"></div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <!--侧边栏-->
+            <div class="side_more">更多产品</div>
+            <div class="side_list">
+                <a href="" class="music">
+                    <span class="side_icon_1"></span> 音乐
+                </a>
+                <a href="" class="music">
+                    <span class="side_icon_2"></span> 图片
+                </a>
+                <a href="" class="music">
+                    <span class="side_icon_3"></span> 知道
+                </a>
+                <a href="" class="music">
+                    <span class="side_icon_4"></span> 文库
+                </a>
+                <a href="" class="music">
+                    <span class="side_icon_5"></span> 风云榜
+                </a>
+                <a href="" class="music">
+                    <span class="side_icon_6"></span> 百度推广
+                </a>
+            </div>
+            <div class="all_product">
+                <a href="">全部产品</a>
+            </div>
+        </div>
+        <!--侧边栏 结束-->
+        <div class="logo-wrap"><!--上 搜索部分-->
+            <div class="logo">
+                <!--logo-->
+                <div class="lg">
+                    <img src="./img/logo_white_fe6da1ec.png" width="270px" height="129px" /></div>
+                    <div class="search"><!--搜索框-->
+                        <form name="f" id="form" action="/s" class="fm" onsubmit="javascript:F.call('ps/sug','pssubmit');">
+                        <input class="s" type="text" /><input  class="btn" type="submit" value="百度一下"/>
+</form>
+
+                    </div><!--搜索框结束-->
+            </div>
+        </div><!--上 搜索部分结束-->
+        <div class="tab-wrap">
+            <div class="tab-main">
+                    <div class="tab-menu">
+
+                        <div class="menu-outer">
+                            <ul>
+                            <li class="menu-mine tabin">
+                            <div class="mine-icon"></div>
+                            <div class="mine-text">我的关注</div>
+                             </li>
+                            <li>导航</li>
+                            
+                            <li>视频</li>
+
+                            </ul>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="setting">
+                            <div class="setting-icon"></div>
+                        </div>
+                    </div>
+                    <div class="tab-content current">
+                        <div class="my-nav">
+                            <div class="nav-content">
+                            <div class="nav-outer">
+                                <div class="nav-icon"></div>
+                                <div class="nav-text">我的导航</div>
+                                <div class="nav-num">（30）</div>
+                            </div>
+
+                            </div>
+                             <div class="nav-wrap">
+
+                             <div class="nav-title">学习</div>
+                             <ul>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                             </ul>
+
+                             </div>
+
+
+                             <div class="nav-wrap">
+
+                             <div class="nav-title">学习</div>
+                             <ul>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                             </ul>
+
+                             </div>
+                             <div class="nav-wrap">
+
+                             <div class="nav-title">学习</div>
+                             <ul>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                             </ul>
+
+                             </div>
+                             <div class="nav-wrap">
+
+                             <div class="nav-title">学习</div>
+                             <ul>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                             </ul>
+
+                             </div>
+                             <div class="nav-wrap">
+
+                             <div class="nav-title">学习</div>
+                             <ul>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                                 <li>
+                                 <img src="img/9086.png">
+                                 <div class="nav-list">新东方</div>
+                                 <div class="nav-fanli"></div>
+                                 </li>
+                             </ul>
+
+                             </div>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                    <div class="water-content">
+                        <div class="s-water">
+                            <h1>猜你喜欢</h1>
+                            <div class="list-water">
+                                <a class="nav-block" href="#">
+                                    <img src="img/9483.png">
+                                    <span>百度糯米</span>
+                                </a>
+                                <div class="rebat">最高返利80%</div>
+                                <div class="tag"></div>
+                            </div>
+                            <div class="list-water">
+                                <a class="nav-block" href="#">
+                                    <img src="img/9483.png">
+                                    <span>百度糯米</span>
+                                </a>
+                                <div class="rebat">最高返利80%</div>
+                                <div class="tag"></div>
+                            </div>
+                            <div class="list-water">
+                                <a class="nav-block" href="#">
+                                    <img src="img/9483.png">
+                                    <span>百度糯米</span>
+                                </a>
+                                <div class="rebat">最高返利80%</div>
+                                <div class="tag"></div>
+                            </div>
+                            <div class="list-water">
+                                <a class="nav-block" href="#">
+                                    <img src="img/9483.png">
+                                    <span>百度糯米</span>
+                                </a>
+                                <div class="rebat">最高返利80%</div>
+                                <div class="tag"></div>
+                            </div>
+                            <div class="list-water">
+                                <a class="nav-block" href="#">
+                                    <img src="img/9483.png">
+                                    <span>百度糯米</span>
+                                </a>
+                                <div class="rebat">最高返利80%</div>
+                                <div class="tag"></div>
+                            </div>
+                            <div class="list-water">
+                                <a class="nav-block" href="#">
+                                    <img src="img/9483.png">
+                                    <span>百度糯米</span>
+                                </a>
+                                <div class="rebat">最高返利80%</div>
+                                <div class="tag"></div>
+                            </div>
+                            <div class="list-water">
+                                <a class="nav-block" href="#">
+                                    <img src="img/9483.png">
+                                    <span>百度糯米</span>
+                                </a>
+                                <div class="rebat">最高返利80%</div>
+                                <div class="tag"></div>
+                            </div>
+                            <div class="list-water">
+                                <a class="nav-block" href="#">
+                                    <img src="img/9483.png">
+                                    <span>百度糯米</span>
+                                </a>
+                                <div class="rebat">最高返利80%</div>
+                                <div class="tag"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    </div>
+                    
+                    <div class="tab-content">
+                        <div class="content-wrap">
+                            <div class="list-film">
+                                <div class="film-img">
+                                    <a href="#" ><img src="img/u=668757219,1816355094&fm=58.jpg"/></a>
+                                    <div class="bg-img"><span>52集全</span></div>
+                                    <div class="bg-icon"></div>
+                                </div>
+                                <div class="film-text">
+                                    <div class="text"><a href="">熊出没</a></div>
+                                    <div class="star">
+                                        <span class="score-star"><span class="star-active"></span></span>6.5
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-film">
+                                <div class="film-img">
+                                    <a href="#" ><img src="img/u=668757219,1816355094&fm=58.jpg"/></a>
+                                    <div class="bg-img"><span>52集全</span></div>
+                                    <div class="bg-icon"></div>
+                                </div>
+                                <div class="film-text">
+                                    <div class="text"><a href="">熊出没</a></div>
+                                    <div class="star">
+                                        <span class="score-star"><span class="star-active"></span></span>6.5
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-film">
+                                <div class="film-1">
+                                    <div class="film-1-img"><img src="img/u=2182216657,4284392713&fm=58.jpg"/>
+                                    <div class="film-1-img-time"><span>01:06</span></div>
+                                    </div>
+                                    
+                                    <div class="film-1-text"><a href="#">《新萧十一郎》开播 朱一龙为爱黑化</a></div>
+                                </div>
+                                <div class="film-2">
+                                    <div class="film-1-img"><img src="img/u=2182216657,4284392713&fm=58.jpg"/>
+                                    <div class="film-1-img-time"><span>01:06</span></div>
+                                    </div>                                   
+                                    <div class="film-1-text"><a href="#">《新萧十一郎》开播 朱一龙为爱黑化</a></div>
+
+                                </div>
+
+                            </div>
+                                                        <div class="list-film">
+                                <div class="film-1">
+                                    <div class="film-1-img"><img src="img/u=2182216657,4284392713&fm=58.jpg"/>
+                                    <div class="film-1-img-time"><span>01:06</span></div>
+                                    </div>
+                                    
+                                    <div class="film-1-text"><a href="#">《新萧十一郎》开播 朱一龙为爱黑化</a></div>
+                                </div>
+                                <div class="film-2">
+                                    <div class="film-1-img"><img src="img/u=2182216657,4284392713&fm=58.jpg"/>
+                                    <div class="film-1-img-time"><span>01:06</span></div>
+                                    </div>                                   
+                                    <div class="film-1-text"><a href="#">《新萧十一郎》开播 朱一龙为爱黑化</a></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gotop">
+                    
+                        <div class="to-top"><span class="gotop-icon"></span> <div class="gotop-text">回到顶部</div></div>
+                       
+
+                    </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+
+</html>

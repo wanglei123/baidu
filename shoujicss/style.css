@@ -1,0 +1,327 @@
+body,p,div,input,ul{
+	margin:0;
+	padding: 0;
+	/*font-size: 62.5%;*/
+}
+img{
+	/*width: 100%;*/
+
+}
+a{
+	text-decoration: none;
+}
+
+.weather{
+	width: 45%;
+	margin: 3px 0 0 5px;
+	height: 40px;
+	font-size: 28px;
+	line-height: 35px;
+	float: left;
+}
+.icon-cloud{
+	height: 40px;
+	float: left;
+	position: relative;
+	top: 3px;
+}
+.weather-num{
+	float: left;
+	font-size: 20px;
+	margin-left: 5px;
+	line-height: 35px;
+}
+.weather-status{
+	padding-top: 5px;
+	float: left;
+	height: 40px;
+	box-sizing:border-box;
+	margin-left:-7px;
+	
+}
+.weather-status p{
+	height: 13px;
+	line-height: 13px;
+	font-size: 11px;
+}
+.icon-arrow-down2{
+	font-size: 10px;
+	display: inline-block;
+	float: left;
+	padding-top: 19px;
+	margin-left: 3px;
+}
+#login{
+	color: #000;
+}
+.icon-user{
+	display: inline-block;
+	float: right;
+	margin: 7px 15px 0 5px;
+	font-size: 28px;
+	line-height: 20px;
+}
+.logo{
+	
+	/*width: 50%;*/
+	height: 55px;
+	padding:17px 0 15px;
+	text-align:center;
+	 /*margin:15px 25% 0 25%;*/
+}
+.clear{
+	clear: both;
+}
+.header{
+	width: 90%;
+	margin: 0 5%;
+	height: 40px;
+}
+form{
+	/*margin: 3%;*/
+	width: 90%;
+	margin: 0 5%;
+	/*position: absolute;*/
+}
+.text{
+	width: 80%;
+	height: 42px;
+	border:1px solid #b6b6b6;
+	outline: none;
+	border-right: none;
+	line-height:28px;
+	padding: 7px 42px 7px 6px;
+	box-sizing:border-box;
+	background: url(../image/callicon1.png) no-repeat right;
+	background-size: 7% 54%;
+
+}
+.btn{
+	height: 42px;
+	width:20%;
+	background: #38f;
+	color: #fff;
+	border:none;
+	font-size: small;
+	border-top:1px solid #38f;
+	border-bottom:1px solid #38f;
+	margin-left: -8px;
+	box-sizing:border-box;
+
+}
+.nav{
+	width: 90%;
+	margin: 7%;
+	overflow: hidden;
+	box-sizing:border-box;
+}
+.nav li{
+	float: left;
+	list-style: none;
+	margin-left: 2%;
+	width: 14%;
+}
+.nav li a{
+	font-size: 12px;
+	height: 16%;
+}
+.nav li a i{
+	display: block;
+	font-size: 22px;
+	margin-bottom: 4px;
+}
+
+.nav li a{
+	color: #262626;
+	text-decoration: none;
+}
+
+.website{
+	width: 90%;
+	margin:  0 5% 0 5%;
+	height: 10%;
+	overflow: hidden;
+	list-style: none;
+	color: #262626;
+	background: #fff;
+	box-sizing:border-box;
+}
+
+.title_text{
+	color: #999;
+	font-size: 15px;
+	line-height: 40px;
+}
+.icon-list2{
+	float: right;
+	line-height: 40px;
+	height: 40px;
+	position: relative;
+	top: 12px;
+	color: #b6b7ba;
+
+}
+.website li{
+	float: left;
+	width: 25%;
+	line-height: 42px;
+	text-align:center;
+	
+}
+
+.icon-plus{
+	font-size: 24px;
+	color: #B6B7BA;
+	position: relative;
+	top: 3px;
+}
+.hot{
+	width: 90%;
+	margin:  5% 5% 0 5%;
+	height: 10%;
+	overflow: hidden;
+	list-style: none;
+	color: #262626;
+	background: #fff;
+	box-sizing:border-box;
+}
+.hot div{
+	
+	position: relative;
+}
+.hot div a{
+	color: #262626;
+	text-decoration: none;
+	font-size: 14px;
+	display: inline-block;
+	/*margin-left:50%;*/
+	height: 38px;
+	line-height: 38px;
+	position: absolute;
+	right: 35px;
+}
+.hot li{
+
+	width: 50%;
+	float: left;
+	height: 42px;
+	/*line-height: 42px;*/
+}
+.hot li a{
+	font-size: 14px;
+	margin: 3% 0;
+	color: #262626;
+	display: inline-block;
+	text-decoration: none;
+}
+.icon-spinner11{
+	color: #b6b7ba;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 5px;
+}
+.local{
+	width: 90%;
+	padding-left: 10%;
+	height: 10%;
+	margin:5% 5% 0 5%; 
+	box-sizing:border-box;
+	overflow: hidden;
+}
+.last_title{
+	width: 90%;
+	margin: 5%;
+	color: #f8595a;
+
+}
+.last_title .title_text{
+	color: #f8595a;
+}
+
+.local li{
+	list-style: none;
+	width: 22%;
+	text-align: center;
+	display: inline-block;
+	box-sizing:border-box;
+
+} 
+.local li a{
+
+	/*padding: 3px 16px;*/
+	display: inline-block;
+	float: left;
+	box-sizing:border-box;
+
+}
+.local li a span{
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	border-radius: 21px;
+	line-height: 42px;
+	text-align: center;
+	color: #fff;
+	font-size: 26px;
+	line-height: 42px;
+	margin: 0 auto;
+}
+
+.local li a p{
+	color: #262626;
+	height: 18px;
+	line-height: 18px;
+	font-size: 14px;
+	margin: 3px 0 8px;
+
+}
+.icon-road{
+	background: #79d3a7;
+}
+.icon-airplane{
+	background: #93a4b3;
+}
+.icon-truck{
+	background: #b1cf6a;
+}
+.icon-shield{
+	background: #93a4b3;
+}
+.icon-make-group{
+	background: #75c5e6;
+}
+.icon-play{
+	background: #b493db;
+}
+.icon-cart{
+	background: #ff6fbf;
+}
+.icon-pacman{
+	background: #ff6b70;
+}
+.more{
+	width: 90%;
+	margin:5%;
+	border-top:1px solid #f0f0f0;
+	height: 47px;
+	line-height: 47px;
+	text-align: center;
+}
+.more .icon-circle-down{
+	padding: 0 10px;
+	color: #b6b7ba;
+	font-size: 18px;
+}
+.footer{
+	width: 100%;
+	text-align: center;
+}
+
+.footer a{
+	color:#262626;
+	display: block;
+	font-size: 13px;
+	height: 20px;
+	line-height: 20px;
+	padding: 16px  6px;
+}
