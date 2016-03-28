@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+html,body{
+    height: 100%;
+}
 body {
     font-size: 12px;
     font-family: arial;
@@ -14,6 +16,7 @@ body {
     min-height: 600px;
     min-width: 810px;
     height: 100%;
+    position: relative;
 
 }
     .tel_container{
